@@ -1,0 +1,84 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #24292f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #2b3137;
+    max-width: 400px;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    & h1 {
+        margin: 0;
+        margin-bottom: 10px;
+        color: whitesmoke;
+        font-size: 24px;
+        text-align: center;
+    }
+    & label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    & input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid darkgray;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+    & input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: gray;
+        color: whitesmoke;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        &:hover {
+            background-color: dimgray;
+        }
+    }
+}
+
+.success {
+    display: flex;
+    align-items: center;
+    color: green;
+    & p {
+        font-size: 20px;
+        margin: 0;
+    }
+    & svg {
+        margin-right: 8px;
+    }
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    color: red;
+    & p {
+        font-size: 20px;
+        margin: 0;
+    }
+    & svg {
+        margin-right: 8px;
+    }
+}

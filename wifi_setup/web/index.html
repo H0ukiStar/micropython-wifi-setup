@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IoT Device SetUp</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Wi-Fi SetUp</h1>
+            <form action="/wifi" method="post">
+                <label for="ssid">SSID :</label>
+                <input type="text" id="ssid" name="ssid" placeholder="enter wifi name" required>
+
+                <label for="key">Password :</label>
+                <input type="password" id="key" name="key" placeholder="enter wifi password" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
